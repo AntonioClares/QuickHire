@@ -33,7 +33,7 @@ QuickHire is a comprehensive mobile application designed to revolutionize the jo
 - Responsive design optimized for mobile devices
 
 ## 🖼️ Screenshots
-<img width="1080" height="1920" alt="QHSC1" src="https://github.com/user-attachments/assets/2fd11252-445a-46a8-a991-580104abe97f" />
+<img width="1080" height="1920" alt="QHSC1" src="https://github.com/user-attachments/assets/a75bbe51-5ab5-44f8-beca-1460ac1b66eb" />
 <img width="1080" height="1920" alt="QHSC2" src="https://github.com/user-attachments/assets/a50dfef7-3e6c-4a67-86f5-be0d7a67774f" />
 <img width="1080" height="1920" alt="QHSC3" src="https://github.com/user-attachments/assets/35f16c0e-2304-45a9-9260-0ea3b9f02cea" />
 
