@@ -1,3 +1,6 @@
+<img width="1920" height="1080" alt="QHReleaseGraphic" src="https://github.com/user-attachments/assets/6508c5ea-df61-4e51-aeb9-f82e0f094729" />
+
+
 # QuickHire
 ![Static Badge](https://img.shields.io/badge/dart-grey?style=for-the-badge&logo=dart&logoColor=skyblue)
 ![Static Badge](https://img.shields.io/badge/Flutter-grey?style=for-the-badge&logo=flutter&logoColor=skyblue)
@@ -30,8 +33,10 @@ QuickHire is a comprehensive mobile application designed to revolutionize the jo
 - Responsive design optimized for mobile devices
 
 ## 🖼️ Screenshots
-<!-- Add your app screenshots here -->
-*Screenshots coming soon*
+<img width="1080" height="1920" alt="QHSC1" src="https://github.com/user-attachments/assets/2fd11252-445a-46a8-a991-580104abe97f" />
+<img width="1080" height="1920" alt="QHSC2" src="https://github.com/user-attachments/assets/a50dfef7-3e6c-4a67-86f5-be0d7a67774f" />
+<img width="1080" height="1920" alt="QHSC3" src="https://github.com/user-attachments/assets/35f16c0e-2304-45a9-9260-0ea3b9f02cea" />
+
 
 ## 📝 How to Build
 
@@ -199,4 +204,4 @@ If you find this project useful, please consider giving it a star on [GitHub](ht
 <a href="https://buymeacoffee.com/developedbymo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="32" width="140"></a>
 
 ## License
-- [MIT License](https://github.com/Developed-By-Mo/QuickHire/blob/main/LICENSE)
+- Please reach out to me at mostafasalama.my@gmail.com for further information.
